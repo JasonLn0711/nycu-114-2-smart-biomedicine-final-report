@@ -56,6 +56,14 @@ python3 data/projects/2026-06-smart-biomedicine-final-report/tools/video_recordi
 python3 data/projects/2026-06-smart-biomedicine-final-report/tools/final_video_gate_status.py --export-root exports/smart-biomedicine-breezyvoice
 ```
 
+## Optional Remotion Render Surface
+
+The repo also contains a Remotion timeline scaffold under `src/` with scene
+timings in `src/scenes.ts`. Render inputs live under ignored `public/` paths:
+local narration audio, generated scene images, transcript copies, and rendered
+MP4 outputs. Use `docs/video_plan.md` and `docs/asset_manifest.md` before
+claiming the Remotion render path is complete.
+
 ## Delivery Gates
 
 - Upload audiovisual final report to Padlet before `2026-06-13 23:00`.
