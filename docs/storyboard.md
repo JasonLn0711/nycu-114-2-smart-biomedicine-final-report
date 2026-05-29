@@ -53,21 +53,24 @@
 
 時間：`07:06-08:14`
 主題：Hager et al. 的臨床決策邊界
-畫面：一台看起來很會寫字的 LLM 打字機停在「decision gate」前；小拳把閘門關住，旁邊標示 guideline、uncertainty、workflow。
+畫面：主畫面放入 Hager et al. Nature Medicine 論文封面截圖，旁邊以淡化的小黑 / 小拳插畫作為 scope-control 背景；一台看起來很會寫字的 LLM 打字機停在 decision gate 前，小拳把閘門關住，旁邊標示 guideline、uncertainty、workflow。
+論文素材：`public/images/papers/hager-2024-title-page.png`，必放。
 字幕重點：Clinical decision-making needs stronger validation than fluent medical text.
 
 ## Scene 08
 
 時間：`08:14-09:23`
 主題：Lang1 與 workflow-specific evaluation
-畫面：小黑把通用模型放進醫院流程的量尺裡量測，量尺刻度不是分數，而是 faithful structuring、missing fields、review edits。
+畫面：主畫面放入 Lang1 overview figure，顯示 clinical/web text、instruction finetuning、comparison 與 hospital/time/task ablation 的整體管線；插畫背景中，小黑把通用模型放進醫院流程的量尺裡量測。
+論文素材：`public/images/papers/lang1-overview.png`。
 字幕重點：A useful clinical model is evaluated on the workflow job it claims to support.
 
 ## Scene 09
 
 時間：`09:23-10:13`
 主題：從通用能力到任務適配
-畫面：一條橋從「general ability」走向「task adaptation」，橋中間有 review data、temporal validation、workflow training 三個小踏板；小黑逐步跨過去。
+畫面：主畫面並排放入 Lang1 zero-shot results 與 finetuned specialist results，讓觀眾看到 zero-shot 與 finetuning 的差異；插畫背景是一條從 general ability 走向 task adaptation 的橋。
+論文素材：`public/images/papers/lang1-zero-shot-results.png`、`public/images/papers/lang1-finetuning-results.png`。
 字幕重點：General ability opens the path, but task adaptation and review data make it dependable.
 
 ## Scene 10

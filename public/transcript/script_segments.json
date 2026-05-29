@@ -1,0 +1,128 @@
+[
+  {
+    "id": "scene_001",
+    "start": 0,
+    "duration": 88.655,
+    "end": 88.655,
+    "source_chunk": "sbm_tts_01_opening.wav",
+    "title": "Opening thesis",
+    "caption": "Patient speech can become a clinician-ready draft when staff review stays in control."
+  },
+  {
+    "id": "scene_002",
+    "start": 88.655,
+    "duration": 73.608,
+    "end": 162.263,
+    "source_chunk": "sbm_tts_02_markdown_format.wav",
+    "title": "Inspectable Markdown surface",
+    "caption": "The report surface should stay linear, visible, and easy to correct."
+  },
+  {
+    "id": "scene_003",
+    "start": 162.263,
+    "duration": 76.789,
+    "end": 239.052,
+    "source_chunk": "sbm_tts_03_definitions.wav",
+    "title": "Key definitions",
+    "caption": "ASR transcribes, the LLM structures, and staff review turns the draft into usable intake."
+  },
+  {
+    "id": "scene_004",
+    "start": 239.052,
+    "duration": 75.013,
+    "end": 314.065,
+    "source_chunk": "sbm_tts_04_workflow_problem.wav",
+    "title": "Workflow bottleneck",
+    "caption": "The first bottleneck is a fragmented patient story before clinical reasoning begins."
+  },
+  {
+    "id": "scene_005",
+    "start": 314.065,
+    "duration": 34.854,
+    "end": 348.919,
+    "source_chunk": "sbm_tts_05_speech_to_summary.wav",
+    "title": "Speech to summary",
+    "caption": "Speech becomes useful when transcript, uncertainty, and missing questions travel together."
+  },
+  {
+    "id": "scene_006",
+    "start": 348.919,
+    "duration": 77.37,
+    "end": 426.289,
+    "source_chunk": "sbm_tts_06_evidence_landscape.wav",
+    "title": "Evidence landscape",
+    "caption": "Healthcare AI is realistic when each tool owns the right workflow layer."
+  },
+  {
+    "id": "scene_007",
+    "start": 426.289,
+    "duration": 67.211,
+    "end": 493.5,
+    "source_chunk": "sbm_tts_07_hager_boundary.wav",
+    "title": "Clinical decision boundary",
+    "caption": "Clinical decision-making needs stronger validation than fluent medical text."
+  },
+  {
+    "id": "scene_008",
+    "start": 493.5,
+    "duration": 69.73,
+    "end": 563.23,
+    "source_chunk": "sbm_tts_08_lang1_overview.wav",
+    "title": "Workflow-specific evaluation",
+    "caption": "A useful clinical model is evaluated on the workflow job it claims to support."
+  },
+  {
+    "id": "scene_009",
+    "start": 563.23,
+    "duration": 49.541,
+    "end": 612.771,
+    "source_chunk": "sbm_tts_09_lang1_results.wav",
+    "title": "Adaptation path",
+    "caption": "General ability opens the path, but task adaptation and review data make it dependable."
+  },
+  {
+    "id": "scene_010",
+    "start": 612.771,
+    "duration": 72.598,
+    "end": 685.369,
+    "source_chunk": "sbm_tts_10_architecture.wav",
+    "title": "Proposed architecture",
+    "caption": "The review decision node is the safety center of the whole architecture."
+  },
+  {
+    "id": "scene_011",
+    "start": 685.369,
+    "duration": 47.323,
+    "end": 732.692,
+    "source_chunk": "sbm_tts_11_scope_controls.wav",
+    "title": "Scope controls",
+    "caption": "The system may prepare a review draft; clinical authority remains human."
+  },
+  {
+    "id": "scene_012",
+    "start": 732.692,
+    "duration": 73.515,
+    "end": 806.207,
+    "source_chunk": "sbm_tts_12_synthetic_example.wav",
+    "title": "Synthetic review draft",
+    "caption": "The useful output is a checkable patient story with uncertainty and missing questions."
+  },
+  {
+    "id": "scene_013",
+    "start": 806.207,
+    "duration": 56.158,
+    "end": 862.365,
+    "source_chunk": "sbm_tts_13_validation_risk.wav",
+    "title": "Validation layers",
+    "caption": "Trust comes from layered validation: ASR, structuring, review, workflow, and governance."
+  },
+  {
+    "id": "scene_014",
+    "start": 862.365,
+    "duration": 78.53,
+    "end": 940.895,
+    "source_chunk": "sbm_tts_14_closing.wav",
+    "title": "Closing implication",
+    "caption": "The next validation path is staff-reviewed intake support, not an autonomous AI doctor."
+  }
+]

@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:01:28,655
+Patient speech can become a clinician-ready draft when staff review stays in control.
+
+2
+00:01:28,655 --> 00:02:42,263
+The report surface should stay linear, visible, and easy to correct.
+
+3
+00:02:42,263 --> 00:03:59,052
+ASR transcribes, the LLM structures, and staff review turns the draft into usable intake.
+
+4
+00:03:59,052 --> 00:05:14,065
+The first bottleneck is a fragmented patient story before clinical reasoning begins.
+
+5
+00:05:14,065 --> 00:05:48,919
+Speech becomes useful when transcript, uncertainty, and missing questions travel together.
+
+6
+00:05:48,919 --> 00:07:06,289
+Healthcare AI is realistic when each tool owns the right workflow layer.
+
+7
+00:07:06,289 --> 00:08:13,500
+Clinical decision-making needs stronger validation than fluent medical text.
+
+8
+00:08:13,500 --> 00:09:23,230
+A useful clinical model is evaluated on the workflow job it claims to support.
+
+9
+00:09:23,230 --> 00:10:12,771
+General ability opens the path, but task adaptation and review data make it dependable.
+
+10
+00:10:12,771 --> 00:11:25,369
+The review decision node is the safety center of the whole architecture.
+
+11
+00:11:25,369 --> 00:12:12,692
+The system may prepare a review draft; clinical authority remains human.
+
+12
+00:12:12,692 --> 00:13:26,207
+The useful output is a checkable patient story with uncertainty and missing questions.
+
+13
+00:13:26,207 --> 00:14:22,365
+Trust comes from layered validation: ASR, structuring, review, workflow, and governance.
+
+14
+00:14:22,365 --> 00:15:40,895
+The next validation path is staff-reviewed intake support, not an autonomous AI doctor.
