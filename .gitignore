@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.local/
+.codex/
+
+# Generated TTS / ASR / video-production artifacts.
+# Keep scripts, runbooks, Markdown sources, and lightweight manifests tracked.
+exports/
+public/
+
+# Local model/runtime assets.
+G2PWModel/
+pretrained_models/
+models/
+
+# Large media exports should be copied into exports/ and kept local-only unless
+# a specific final deliverable needs to be tracked deliberately.
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Office/video render scratch files.
+*.tmp
+*.bak
+.~lock.*#
