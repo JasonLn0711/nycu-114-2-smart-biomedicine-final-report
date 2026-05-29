@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+node_modules/
 .DS_Store
 .local/
 .codex/
@@ -8,7 +9,8 @@ __pycache__/
 # Generated TTS / ASR / video-production artifacts.
 # Keep scripts, runbooks, Markdown sources, and lightweight manifests tracked.
 exports/
-public/
+public/audio/
+public/exports/
 
 # Local model/runtime assets.
 G2PWModel/

@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "remotion studio src/Root.tsx",
-    "render": "remotion render src/Root.tsx FinalReportVideo public/exports/final_report.mp4",
-    "render:quick": "remotion render src/Root.tsx FinalReportVideo public/exports/final_report.mp4 --frames=0-120"
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts FinalReportVideo public/exports/final_report.mp4",
+    "render:quick": "remotion render src/index.ts FinalReportVideo public/exports/final_report.mp4 --frames=0-120"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

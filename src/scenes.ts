@@ -6,6 +6,11 @@ export type Scene = {
   start: number;
   duration: number;
   image: string;
+  sourceImages?: Array<{
+    src: string;
+    label: string;
+    fit?: "contain" | "cover";
+  }>;
   caption: string;
   captionZh: string;
 };
@@ -71,6 +76,12 @@ export const scenes: Scene[] = [
     start: 426.289,
     duration: 67.211,
     image: "images/scene_007.png",
+    sourceImages: [
+      {
+        src: "images/papers/hager-2024-title-page.png",
+        label: "Hager et al., Nature Medicine boundary paper",
+      },
+    ],
     caption: "Clinical decision-making needs stronger validation than fluent medical text.",
     captionZh: "臨床決策需要比流暢醫療文字更強的驗證。",
   },
@@ -80,6 +91,12 @@ export const scenes: Scene[] = [
     start: 493.5,
     duration: 69.73,
     image: "images/scene_008.png",
+    sourceImages: [
+      {
+        src: "images/papers/lang1-overview.png",
+        label: "Lang1 overview: workflow-specific clinical model pipeline",
+      },
+    ],
     caption: "A useful clinical model is evaluated on the workflow job it claims to support.",
     captionZh: "有用的臨床模型，要用它聲稱支援的流程任務來評估。",
   },
@@ -89,6 +106,16 @@ export const scenes: Scene[] = [
     start: 563.23,
     duration: 49.541,
     image: "images/scene_009.png",
+    sourceImages: [
+      {
+        src: "images/papers/lang1-zero-shot-results.png",
+        label: "Lang1 zero-shot results",
+      },
+      {
+        src: "images/papers/lang1-finetuning-results.png",
+        label: "Lang1 finetuned specialist results",
+      },
+    ],
     caption: "General ability opens the path, but task adaptation and review data make it dependable.",
     captionZh: "通用能力開路，任務適配與審核資料讓系統可靠。",
   },
