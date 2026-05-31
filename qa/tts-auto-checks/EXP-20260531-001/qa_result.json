@@ -1,0 +1,472 @@
+{
+  "experiment_id": "EXP-20260531-001",
+  "created_at": "2026-05-31T10:18:43.818869+00:00",
+  "profile": "teaching_material",
+  "status": "accepted_with_warnings",
+  "source_text_sha256": "c0829cd31b26dae0291204e198a7a446777dacf76c74518fb9216c0251bc0fcf",
+  "model_facing_text_sha256": "c0829cd31b26dae0291204e198a7a446777dacf76c74518fb9216c0251bc0fcf",
+  "audio_sha256": [
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_01_opening.wav",
+      "sha256": "6895d7c34459c52e0f668107e845967eed223170b3c8f3383fbedad145e14a22"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_02_markdown_format.wav",
+      "sha256": "3fe3bb601230dd6e4ee3d950eae205ef0bb724a3cedc01f340c2a90fd3d393a6"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_03_definitions.wav",
+      "sha256": "305b2fffb1dedf56fc20dfcab65165884067b96b23074fe88e882186bc595d2a"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_04_workflow_problem.wav",
+      "sha256": "17bab703931f8d0e1eea018048bc981b2f685a17df4a0d029c0a024654369f82"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_05_speech_to_summary.wav",
+      "sha256": "896567357acb177d08af1aac35b2479c3fd795e3954cf6517608959a1e728e8f"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_06_evidence_landscape.wav",
+      "sha256": "3b132835085174c8a9e2e07486b9415e886ea9b0db6f0e1d90890f9bf7b2cafc"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_07_hager_boundary.wav",
+      "sha256": "2078cdd1655c3e34cb54bc8aee9a6801235a6816f37cc693851fc174164b9c04"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_08_lang1_overview.wav",
+      "sha256": "815a7939141f56c887e87a5fdd55f85021af21be531b6347bfb56921195f9723"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_09_lang1_results.wav",
+      "sha256": "7b4c5d4c7f09fd510addb0eee60c7a0cc2745d4dcbe2a8480bf1ed3f36c758c4"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_10_architecture.wav",
+      "sha256": "73220544184b2dd4c707ea37199e02076d58dd7b2c355e53be3b110522404bcc"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_11_scope_controls.wav",
+      "sha256": "7ec640972f7a5c06a3248884dc6ea9efc4a5bc1b847b4112af88ca3c51562963"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_12_synthetic_example.wav",
+      "sha256": "cce34aa32bb2a37fa492d08bff9751e5b31dd2a6071ddc008769bb18e60c7f74"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_13_validation_risk.wav",
+      "sha256": "c191466ea7ae93857c6b645827d188359c6d83889c94b9629eda1b899ae294ae"
+    },
+    {
+      "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_14_closing.wav",
+      "sha256": "62bfd335370edf2cd03f2a6a84c0f0639bae3e02a1dca9ea5a04277a4decdf80"
+    }
+  ],
+  "asr_transcript_sha256": "4f27e037ee78427246da783d1ca40b5ea900c7eb6c005ec643e94a30b587ae91",
+  "inputs": {
+    "source_text": null,
+    "model_facing_text": "data/projects/2026-06-smart-biomedicine-final-report/breezyvoice-narration-chunks-v1.md",
+    "asr_transcript": null,
+    "asr_report_dir": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr",
+    "lexicon": "templates/tts-pronunciation-lexicon.csv",
+    "audio_dir": "exports/smart-biomedicine-breezyvoice/chunks",
+    "rights_manifest": "qa/tts-auto-checks/EXP-20260531-001/rights-manifest.yaml"
+  },
+  "chunks": [
+    {
+      "chunk_id": "sbm_tts_01_opening",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_01_opening.asr-qa.md",
+      "source_text_sha256": "4d4fffb06624d177354b533785b466eb82db4772831e6a5e34ed0d17bfd823a9",
+      "asr_transcript_sha256": "3504fa9c564d4c571bacefa384af4f3f6a243f5419a203f7d9a0637df9551f63",
+      "source_chars": 1127,
+      "asr_chars": 1098
+    },
+    {
+      "chunk_id": "sbm_tts_02_markdown_format",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_02_markdown_format.asr-qa.md",
+      "source_text_sha256": "f5273c1049a4f95264d273b5c58e0f569910c9206bbc00c05712e5407b0db9f4",
+      "asr_transcript_sha256": "93e71ad24adb689c74f09b338baf132ebb92d2c83ed89b910c9cac92ed7a8a29",
+      "source_chars": 953,
+      "asr_chars": 930
+    },
+    {
+      "chunk_id": "sbm_tts_03_definitions",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_03_definitions.asr-qa.md",
+      "source_text_sha256": "ed4e56c9e78dccaa67aeb208911b7663cef1dcdeee3f3f846194679dce307d85",
+      "asr_transcript_sha256": "8f8ab9ac6cd0f2f08e92b33e4a633688c343f1afb4550f2429f4cce455fea37a",
+      "source_chars": 1014,
+      "asr_chars": 977
+    },
+    {
+      "chunk_id": "sbm_tts_04_workflow_problem",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_04_workflow_problem.asr-qa.md",
+      "source_text_sha256": "fb7051844c881a4aef429881abbbab06ddc88c89ba4e3b0d2847688fb3f5c077",
+      "asr_transcript_sha256": "db999c66f912b857ad59a49e4c0a585c551740be38e9d8aaf5a80f4a6368ccb4",
+      "source_chars": 957,
+      "asr_chars": 938
+    },
+    {
+      "chunk_id": "sbm_tts_05_speech_to_summary",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_05_speech_to_summary.asr-qa.md",
+      "source_text_sha256": "2b8ace272db056c963c0d96123e2eb39d2f20f6830924a0896633c6700f2cba1",
+      "asr_transcript_sha256": "cb847987878332db4a31c0e3f7d83086facce346a11408d0001e39e1fe4d0d3f",
+      "source_chars": 401,
+      "asr_chars": 388
+    },
+    {
+      "chunk_id": "sbm_tts_06_evidence_landscape",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_06_evidence_landscape.asr-qa.md",
+      "source_text_sha256": "255f2cc79a0760589958a588a48e9f64d53fe33da9d305f51aab0e16efadd628",
+      "asr_transcript_sha256": "29816ba493b13d0c0991b9e8c201003d9f18997df24067e3f5cdb0ad894cc287",
+      "source_chars": 1029,
+      "asr_chars": 1012
+    },
+    {
+      "chunk_id": "sbm_tts_07_hager_boundary",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_07_hager_boundary.asr-qa.md",
+      "source_text_sha256": "5a7eb98dd8cc22a05e569b998d1efc2a15831d4751a5de098357d577baa82d8b",
+      "asr_transcript_sha256": "f8845641cf55e152718506a483cf1502b4722219ec5acaaeaa924959e2d72000",
+      "source_chars": 853,
+      "asr_chars": 840
+    },
+    {
+      "chunk_id": "sbm_tts_08_lang1_overview",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_08_lang1_overview.asr-qa.md",
+      "source_text_sha256": "07d848953e07f4a0ad936a82661b9e754b785f48466be0c7939209b45544cc22",
+      "asr_transcript_sha256": "866d95859ef95d4f1fa1e8870fe04e4ed1e3ff3dc6e962a5d24338c6776c6cb2",
+      "source_chars": 844,
+      "asr_chars": 834
+    },
+    {
+      "chunk_id": "sbm_tts_09_lang1_results",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_09_lang1_results.asr-qa.md",
+      "source_text_sha256": "03057c6a091d9802e0f0fe25c916f96aee4f59ee7043448adb9e6fabfc234a89",
+      "asr_transcript_sha256": "90aa0017444b67297fb31cc1564d0e985cfdbc04d6620b2f4b03d99b4148a311",
+      "source_chars": 573,
+      "asr_chars": 567
+    },
+    {
+      "chunk_id": "sbm_tts_10_architecture",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_10_architecture.asr-qa.md",
+      "source_text_sha256": "49ef87920a401eafd4689172c9f9aa677f3c9d6ac01f0594ec1e43c194583d6e",
+      "asr_transcript_sha256": "521ef73d3f237de0fbe90c93f8db9f292c05d6846f767611bb1f8ff2e4342884",
+      "source_chars": 971,
+      "asr_chars": 950
+    },
+    {
+      "chunk_id": "sbm_tts_11_scope_controls",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_11_scope_controls.asr-qa.md",
+      "source_text_sha256": "9e15f30c42ee479bd77db71b9ca3e1ba4066fac5355212b27b0a50c035414c8c",
+      "asr_transcript_sha256": "e7b301447dd504622c5b11d5fbaf137dacacd1e14a8cb836984d28c5bba2878a",
+      "source_chars": 672,
+      "asr_chars": 662
+    },
+    {
+      "chunk_id": "sbm_tts_12_synthetic_example",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_12_synthetic_example.asr-qa.md",
+      "source_text_sha256": "eda7345ca48d371c48c5686d2e550eca8f66518d57c9d4c01872eab48fc20db7",
+      "asr_transcript_sha256": "0f720d510ef1ece00494a158a4cda150bf0a563e85f30742781f033f4f367174",
+      "source_chars": 963,
+      "asr_chars": 944
+    },
+    {
+      "chunk_id": "sbm_tts_13_validation_risk",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_13_validation_risk.asr-qa.md",
+      "source_text_sha256": "05cf95e577222d891fc0e165d3534b5c14f89b18c4e90e3fe74bde4a46977221",
+      "asr_transcript_sha256": "6da63df2e06228195e311c2ea0388d42e97ef1d1eb1f33268c011c9b2c1d9846",
+      "source_chars": 647,
+      "asr_chars": 633
+    },
+    {
+      "chunk_id": "sbm_tts_14_closing",
+      "asr_report": "exports/smart-biomedicine-breezyvoice/qa/chunk-asr/sbm_tts_14_closing.asr-qa.md",
+      "source_text_sha256": "31178249fdb74d0577e34da90144fc869042c935f6739aba1a60fbbf3fa5802b",
+      "asr_transcript_sha256": "a8c4ae9a062ee8f497590677a6364721891df3086c48ce2dc1fe8feffc521282",
+      "source_chars": 1017,
+      "asr_chars": 1006
+    }
+  ],
+  "metrics": {
+    "cer": 0.008663883089770355,
+    "wer": 0.017507723995880537,
+    "thresholds": {
+      "cer": 0.08,
+      "wer": 0.12
+    },
+    "critical_term_accuracy": 1.0,
+    "missing_critical_terms": [],
+    "numeric_mismatches": [],
+    "missing_sentence_count": 2,
+    "repeated_sentence_count": 0
+  },
+  "audio_quality": {
+    "files": [
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_01_opening.wav",
+        "duration_seconds": 88.154558,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.4,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -14.97,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "6895d7c34459c52e0f668107e845967eed223170b3c8f3383fbedad145e14a22",
+        "size_bytes": 3887660
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_02_markdown_format.wav",
+        "duration_seconds": 73.108027,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.4,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.12,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "3fe3bb601230dd6e4ee3d950eae205ef0bb724a3cedc01f340c2a90fd3d393a6",
+        "size_bytes": 3224108
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_03_definitions.wav",
+        "duration_seconds": 76.289161,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -16.1,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.81,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "305b2fffb1dedf56fc20dfcab65165884067b96b23074fe88e882186bc595d2a",
+        "size_bytes": 3364396
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_04_workflow_problem.wav",
+        "duration_seconds": 74.512834,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.9,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.67,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "17bab703931f8d0e1eea018048bc981b2f685a17df4a0d029c0a024654369f82",
+        "size_bytes": 3286060
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_05_speech_to_summary.wav",
+        "duration_seconds": 34.353923,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.5,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.31,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "896567357acb177d08af1aac35b2479c3fd795e3954cf6517608959a1e728e8f",
+        "size_bytes": 1515052
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_06_evidence_landscape.wav",
+        "duration_seconds": 76.86966,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.9,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.72,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "3b132835085174c8a9e2e07486b9415e886ea9b0db6f0e1d90890f9bf7b2cafc",
+        "size_bytes": 3389996
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_07_hager_boundary.wav",
+        "duration_seconds": 66.71093,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.4,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -14.87,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "2078cdd1655c3e34cb54bc8aee9a6801235a6816f37cc693851fc174164b9c04",
+        "size_bytes": 2941996
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_08_lang1_overview.wav",
+        "duration_seconds": 69.230295,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.1,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -14.72,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "815a7939141f56c887e87a5fdd55f85021af21be531b6347bfb56921195f9723",
+        "size_bytes": 3053100
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_09_lang1_results.wav",
+        "duration_seconds": 49.040544,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.5,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -14.82,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "7b4c5d4c7f09fd510addb0eee60c7a0cc2745d4dcbe2a8480bf1ed3f36c758c4",
+        "size_bytes": 2162732
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_10_architecture.wav",
+        "duration_seconds": 72.097959,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.5,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.23,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "73220544184b2dd4c707ea37199e02076d58dd7b2c355e53be3b110522404bcc",
+        "size_bytes": 3179564
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_11_scope_controls.wav",
+        "duration_seconds": 46.823039,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.9,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.54,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "7ec640972f7a5c06a3248884dc6ea9efc4a5bc1b847b4112af88ca3c51562963",
+        "size_bytes": 2064940
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_12_synthetic_example.wav",
+        "duration_seconds": 73.015147,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.2,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -14.88,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "cce34aa32bb2a37fa492d08bff9751e5b31dd2a6071ddc008769bb18e60c7f74",
+        "size_bytes": 3220012
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_13_validation_risk.wav",
+        "duration_seconds": 55.658231,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -16.0,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.6,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "c191466ea7ae93857c6b645827d188359c6d83889c94b9629eda1b899ae294ae",
+        "size_bytes": 2454572
+      },
+      {
+        "path": "exports/smart-biomedicine-breezyvoice/chunks/sbm_tts_14_closing.wav",
+        "duration_seconds": 78.529887,
+        "sample_rate": 22050,
+        "channels": 1,
+        "channel_layout": "1ch",
+        "codec_name": "pcm_s16le",
+        "mean_volume_db": -15.7,
+        "max_volume_db": -0.1,
+        "integrated_loudness_lufs": -15.16,
+        "long_silence_count": 0,
+        "max_silence_seconds": 0.0,
+        "ffmpeg_warnings": [],
+        "sha256": "62bfd335370edf2cd03f2a6a84c0f0639bae3e02a1dca9ea5a04277a4decdf80",
+        "size_bytes": 3463212
+      }
+    ],
+    "file_count": 14,
+    "clipping": false,
+    "long_silence_count": 0,
+    "integrated_loudness_lufs": -15.244285714285715,
+    "sample_rate_consistent": true,
+    "channel_layout_consistent": true,
+    "chunk_loudness_spread_db": 1.0899999999999999,
+    "status": "pass"
+  },
+  "rights": {
+    "status": "pass",
+    "research_use_blocked": false,
+    "external_sharing_blocked": false,
+    "manifest": {
+      "voice_source": "self_provided_reference_voice",
+      "whose_voice": "Jason Chia-Sheng Lin",
+      "consent_obtained": "yes",
+      "allowed_use": "teaching_material_and_course_report_delivery",
+      "forbidden_use": "reuse_as_research_stimulus_without_new_rights_and_irb_review",
+      "can_share_externally": "yes",
+      "can_use_for_research": "no",
+      "synthetic_voice_disclosure_required": "yes",
+      "irb_relevance": "unknown",
+      "storage_location": "exports/ and assets/tts-local-only/ local/private storage",
+      "deletion_or_withdrawal_mechanism": "remove local/private voice artifacts and rerun hashes/manifests"
+    }
+  },
+  "platform_smoke": {
+    "status": "not_run",
+    "note": ""
+  },
+  "semantic_drift": {
+    "status": "not_run",
+    "issues": []
+  },
+  "warnings": [
+    "missing_sentence_count=2",
+    "platform smoke check not_run",
+    "audio peak is close to 0 dBFS; confirm limiter behavior"
+  ],
+  "reject_reasons": [],
+  "next_action": "Accepted with warnings. Review warnings and decide whether the target use profile needs repair."
+}

@@ -27,12 +27,44 @@ Complete provenance
 
 ## Immediate Tool Gap
 
-The current repo already has ASR, repair, loudness, provenance, and objective
-audit helpers. The next implementation step is to combine them into one
-project-neutral auto-gate command that emits:
+The current repo now has one project-neutral auto-gate command:
 
+```bash
+python3 tools/run_tts_auto_qa.py \
+  --asr-report-dir exports/smart-biomedicine-breezyvoice/qa/chunk-asr \
+  --model-facing-text data/projects/2026-06-smart-biomedicine-final-report/breezyvoice-narration-chunks-v1.md \
+  --lexicon templates/tts-pronunciation-lexicon.csv \
+  --audio-dir exports/smart-biomedicine-breezyvoice/chunks \
+  --rights-manifest qa/tts-auto-checks/EXP-20260531-001/rights-manifest.yaml \
+  --profile teaching_material \
+  --experiment-id EXP-20260531-001 \
+  --out qa/tts-auto-checks/EXP-20260531-001
+```
+
+The first BreezyVoice package run emitted:
+
+- `qa_result.json`
+- `qa_summary.md`
 - `term_error_list.csv`
-- `tts-auto-qa.json`
-- `tts-auto-qa.md`
-- per-chunk accepted/rejected status
-- final package accepted/rejected status
+- `audio_quality_report.json`
+- `release_manifest.md`
+
+Result: `accepted_with_warnings`.
+
+Key metrics:
+
+- `CER = 0.0087`
+- `WER = 0.0175`
+- `critical_term_accuracy = 1.0000`
+- `audio_files_checked = 14`
+- `audio_status = pass`
+- `rights_status = pass`
+
+Warnings are delivery/edge-review items rather than hard rejects:
+
+- `platform_smoke_check = not_run`
+- audio peak is close to `0 dBFS`; limiter behavior should be confirmed before
+  future public releases.
+- fuzzy sentence matching reported `missing_sentence_count=2`; this is a watch
+  item because CER/WER and critical-term accuracy are already within the
+  teaching-material gate.

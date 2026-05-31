@@ -1,0 +1,11 @@
+voice_source: self_provided_reference_voice
+whose_voice: Jason Chia-Sheng Lin
+consent_obtained: yes
+allowed_use: teaching_material_and_course_report_delivery
+forbidden_use: reuse_as_research_stimulus_without_new_rights_and_irb_review
+can_share_externally: yes
+can_use_for_research: no
+synthetic_voice_disclosure_required: yes
+irb_relevance: unknown
+storage_location: exports/ and assets/tts-local-only/ local/private storage
+deletion_or_withdrawal_mechanism: remove local/private voice artifacts and rerun hashes/manifests

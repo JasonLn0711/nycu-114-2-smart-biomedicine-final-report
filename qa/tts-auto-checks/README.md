@@ -17,5 +17,13 @@ Required public-safe QA evidence:
 - chunk-consistency result
 - accepted/rejected decision
 
+Runnable MVP evidence package:
+
+- `EXP-20260531-001/qa_result.json`
+- `EXP-20260531-001/qa_summary.md`
+- `EXP-20260531-001/term_error_list.csv`
+- `EXP-20260531-001/audio_quality_report.json`
+- `EXP-20260531-001/release_manifest.md`
+
 The active methodology is documented in
 `docs/tts-methodology/tts-research-audio-methodology-v1-zh-tw.md`.
