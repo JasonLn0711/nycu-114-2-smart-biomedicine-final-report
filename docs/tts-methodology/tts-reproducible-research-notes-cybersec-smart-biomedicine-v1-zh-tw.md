@@ -373,7 +373,7 @@ style drift only => no formal gate failure
 | --- | --- | --- |
 | FFmpeg `loudnorm` | Official FFmpeg docs define EBU R128 loudness normalization and target IL/LRA/TP options. | Primary loudness normalization and measurement route. |
 | FFmpeg `silencedetect` / `ebur128` | Official FFmpeg filter docs provide silence and loudness scanning filters. | Long-silence detection and extra loudness audit. |
-| C2PA | Official specification defines cryptographically verifiable content provenance architecture. | Future delivery-layer provenance for public media or research stimuli where content credentials matter. |
+| C2PA | Official `2.2` specification defines cryptographically verifiable content provenance architecture. | Future delivery-layer provenance for public media or research stimuli where content credentials matter. |
 | NIST AI RMF | Official NIST page provides a risk-management framework and GenAI profile resources. | Governance vocabulary for rights, disclosure, traceability, and risk controls. |
 
 ## Missing items to add next
@@ -581,5 +581,5 @@ Use this decision table when starting a new TTS project.
 - JiWER docs: <https://jitsi.github.io/jiwer/>
 - JiWER GitHub: <https://github.com/jitsi/jiwer>
 - FFmpeg filters: <https://ffmpeg.org/ffmpeg-filters.html>
-- C2PA technical specification: <https://spec.c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html>
+- C2PA technical specification 2.2: <https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html>
 - NIST AI Risk Management Framework: <https://www.nist.gov/itl/ai-risk-management-framework>
