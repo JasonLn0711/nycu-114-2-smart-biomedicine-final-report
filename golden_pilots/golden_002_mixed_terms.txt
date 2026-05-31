@@ -1,0 +1,15 @@
+This pilot checks mixed technical terms.
+
+Automatic speech recognition, or A S R, turns speech into text.
+
+A large language model, or L L M, can organize text into a draft.
+
+R A G means retrieval augmented generation.
+
+FDA five ten k is a regulatory pathway for some medical devices.
+
+In a clinical workflow, triage means sorting or prioritizing patients.
+
+In Mandarin, triage can also be explained as fen liu.
+
+The model should keep these terms understandable and should not replace them with unrelated words.

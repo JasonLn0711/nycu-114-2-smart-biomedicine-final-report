@@ -1,11 +1,11 @@
-term,preferred_reading,context,critical
-ASR,A-S-R,technical talk,yes
-LLM,L-L-M,technical talk,yes
-FDA 510(k),F-D-A five ten k,medical device regulation,yes
-triage,triage / 分流,clinical workflow,yes
-RAG,R-A-G,AI system,yes
-GPU,G-P-U,compute runtime,yes
-kHz,kilo hertz,audio format,yes
-LUFS,L-U-F-S,audio loudness,yes
-previsit,before visit,clinical workflow,no
-clinician-ready,ready for clinicians,clinical workflow,no
+term,preferred_reading,aliases,context,critical
+ASR,A-S-R,A S R|automatic speech recognition|speech recognition,technical talk,yes
+LLM,L-L-M,L L M|large language model|large-language model,technical talk,yes
+FDA 510(k),F-D-A five ten k,FDA five ten k|F D A 510 K|FDA 510 K|five ten k,medical device regulation,yes
+triage,triage,分流|clinical triage|patient priority,clinical workflow,yes
+RAG,R-A-G,R A G|retrieval augmented generation,AI system,yes
+GPU,G-P-U,G P U|graphics processing unit,compute runtime,yes
+kHz,kilo hertz,kilohertz|k h z|K H Z,audio format,yes
+LUFS,L-U-F-S,L U F S|loudness units full scale,audio loudness,yes
+previsit,before visit,pre visit|pre-visit,clinical workflow,no
+clinician-ready,ready for clinicians,clinician ready|clinician-facing|clinical review screen,clinical workflow,no

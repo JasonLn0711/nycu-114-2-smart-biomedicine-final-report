@@ -6,7 +6,16 @@
 
 ## ASR Back-Transcription
 
-接受門檻：
+依 profile 決定文字相似度門檻：
+
+| Profile | CER | WER | 使用情境 |
+| --- | ---: | ---: | --- |
+| `internal_draft` | `<= 12%` | `<= 18%` | 私下快速測試 |
+| `teaching_material` | `<= 8%` | `<= 12%` | 課程、教學、簡報、demo |
+| `research_stimulus` | `<= 5%` | `<= 8%` | 研究刺激材料 |
+| `public_external` | `<= 6%` | `<= 10%` | 對外公開影片或音檔 |
+
+預設 teaching / demo 接受門檻：
 
 - `CER <= 8%`
 - `WER <= 12%`
@@ -20,8 +29,10 @@
 
 ## Pronunciation Lexicon Check
 
-- 所有 `critical=yes` 的 terms 必須出現在 ASR transcript。
+- 所有在 source/model-facing text 中出現的 `critical=yes` terms，必須在
+  ASR transcript 中命中 canonical term、preferred reading、或 aliases。
 - preferred reading 可以是英文拼讀、中文讀法、或專案指定替代句。
+- aliases 用 `|` 分隔，例如 `FDA five ten k|F D A 510 K|FDA 510 K`。
 - 錯誤術語列入 `term_error_list.csv`。
 - critical term 錯誤直接 reject。
 - 若術語反覆錯，優先改 model-facing text 或 preferred reading。
@@ -76,6 +87,32 @@
 - accepted/rejected decision exists.
 
 缺少 provenance 的音檔不可作為研究材料。
+
+## Rights Gate
+
+接受門檻：
+
+- `public_external` 需要 `can_share_externally: yes`。
+- `research_stimulus` 需要 `can_use_for_research: yes`。
+- 真人 reference voice 若缺 consent，研究使用狀態為 `research_use_blocked`。
+- synthetic voice disclosure 是否需要揭露必須明確記錄。
+
+rights gate 只記錄授權與使用範圍，不把 raw reference audio 放進公開 repo。
+
+## Optional Semantic Drift Check
+
+LLM semantic-drift check 可以作為輔助檢查，但不單獨決定通過。它適合抓：
+
+- meaning-changing omission
+- wrong actor
+- wrong responsibility
+- wrong number
+- wrong regulation
+- clinical boundary drift
+- unsupported claim
+
+涉及 clinical、regulatory、numeric claim 的錯誤可以形成 reject reason。其他語氣差異
+以 warning 處理。
 
 ## Final Acceptance
 

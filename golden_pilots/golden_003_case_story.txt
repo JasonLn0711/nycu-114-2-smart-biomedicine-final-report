@@ -1,0 +1,15 @@
+A patient describes a symptom before a clinic visit.
+
+The system records the voice and creates a draft intake summary.
+
+The summary is not a diagnosis.
+
+The summary is not a treatment recommendation.
+
+Clinical staff review the draft before it becomes part of the visit workflow.
+
+If the draft misses a warning sign, staff can correct it.
+
+If the draft is unclear, staff can ask a follow up question.
+
+The useful goal is a safer review surface, not autonomous medical decision making.

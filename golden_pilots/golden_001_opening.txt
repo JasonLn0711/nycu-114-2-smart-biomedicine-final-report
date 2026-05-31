@@ -1,0 +1,13 @@
+Hello everyone. This is a short opening for a research audio pilot.
+
+The goal is to test whether the generated voice stays clear, stable, and easy to follow.
+
+The speaker should use a calm pace.
+
+Each sentence should be complete.
+
+The audio should not skip the first word.
+
+The audio should not cut off the final word.
+
+This pilot is only a technical check before a full research or teaching render.

@@ -1,0 +1,11 @@
+voice_source: not_applicable
+whose_voice: not_applicable
+consent_obtained: not_applicable
+allowed_use: internal_draft
+forbidden_use: public_external_without_rights_review
+can_share_externally: no
+can_use_for_research: no
+synthetic_voice_disclosure_required: yes
+irb_relevance: unknown
+storage_location: assets/tts-local-only/
+deletion_or_withdrawal_mechanism: remove local/private artifacts and invalidate derived hashes

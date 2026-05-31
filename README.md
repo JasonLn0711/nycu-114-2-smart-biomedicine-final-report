@@ -34,7 +34,10 @@ Working English title:
 - Recording cue sheet:
   `data/projects/2026-06-smart-biomedicine-final-report/video-recording-cue-sheet-v1.md`
 - Tools: `data/projects/2026-06-smart-biomedicine-final-report/tools/`
+- Reusable auto-QA CLI: `tools/run_tts_auto_qa.py`
 - Reusable TTS methodology: `docs/tts-methodology/`
+- Delivery records: `docs/delivery/`
+- Golden pilot set: `golden_pilots/`
 - TTS experiment cards: `logs/tts-experiments/`
 - Repo-safe TTS auto-QA summaries: `qa/tts-auto-checks/`
 - Local generated artifacts: `exports/`
@@ -60,13 +63,29 @@ python3 data/projects/2026-06-smart-biomedicine-final-report/tools/video_recordi
 python3 data/projects/2026-06-smart-biomedicine-final-report/tools/final_video_gate_status.py --export-root exports/smart-biomedicine-breezyvoice
 ```
 
+Reusable project-neutral TTS auto-QA:
+
+```bash
+python3 tools/run_tts_auto_qa.py \
+  --source-text data/projects/2026-06-smart-biomedicine-final-report/breezyvoice-narration-chunks-v1.md \
+  --model-facing-text data/projects/2026-06-smart-biomedicine-final-report/breezyvoice-narration-chunks-v1.md \
+  --asr-transcript exports/smart-biomedicine-breezyvoice/qa/chunk-asr \
+  --lexicon templates/tts-pronunciation-lexicon.csv \
+  --audio-dir exports/smart-biomedicine-breezyvoice/chunks \
+  --rights-manifest qa/tts-auto-checks/EXP-20260531-001/rights-manifest.yaml \
+  --profile teaching_material \
+  --experiment-id EXP-20260531-001 \
+  --out qa/tts-auto-checks/EXP-20260531-001
+```
+
 ## Reusable TTS Research-Audio Workflow
 
 Future TTS research audio should use the methodology in
 `docs/tts-methodology/`. The production gate is automated or semi-automated:
 ASR back-transcription, pronunciation/critical-term checks, audio-quality
-checks, chunk consistency, and hash/provenance decide acceptance. Subjective
-listening can inform repair decisions, but it is not the acceptance gate.
+checks, chunk consistency, rights checks, and hash/provenance decide
+acceptance. Subjective listening can inform repair decisions, but it is not the
+acceptance gate.
 
 Each TTS run should create a card from `templates/tts-experiment-card.md` under
 `logs/tts-experiments/`. Raw reference voice, generated audio, failed samples,

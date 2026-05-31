@@ -1,0 +1,27 @@
+pilot_set_id: golden-pilots-v0.1
+purpose: compare TTS models with a stable opening, mixed-terms, and case-story set
+lexicon: golden_pilots/golden_lexicon.csv
+pilots:
+  - id: golden_001_opening
+    source_text: golden_pilots/golden_001_opening.txt
+    purpose: natural opening, stable pace, short sentence control
+  - id: golden_002_mixed_terms
+    source_text: golden_pilots/golden_002_mixed_terms.txt
+    purpose: ASR, LLM, FDA 510(k), RAG, triage, and mixed English/Chinese terms
+  - id: golden_003_case_story
+    source_text: golden_pilots/golden_003_case_story.txt
+    purpose: clinical workflow narrative, long-context coherence, responsibility boundaries
+required_outputs:
+  - qa_result.json
+  - qa_summary.md
+  - term_error_list.csv
+  - audio_quality_report.json
+comparison_columns:
+  - model
+  - CER
+  - WER
+  - critical term pass
+  - audio pass
+  - rights pass
+  - status
+  - notes

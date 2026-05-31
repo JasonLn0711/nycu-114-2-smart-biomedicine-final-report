@@ -1,0 +1,8 @@
+term,preferred_reading,aliases,context,critical
+ASR,A-S-R,A S R|automatic speech recognition|speech recognition,golden mixed terms,yes
+LLM,L-L-M,L L M|large language model,golden mixed terms,yes
+FDA 510(k),F-D-A five ten k,FDA five ten k|F D A 510 K|FDA 510 K|five ten k,golden mixed terms,yes
+RAG,R-A-G,R A G|retrieval augmented generation,golden mixed terms,yes
+triage,triage,clinical triage|fen liu|分流,golden mixed terms,yes
+diagnosis,diagnosis,medical diagnosis,case story,yes
+treatment recommendation,treatment recommendation,treatment plan|therapy recommendation,case story,yes
