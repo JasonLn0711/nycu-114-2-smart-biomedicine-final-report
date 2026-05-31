@@ -70,3 +70,16 @@ copied, or media-heavy render inputs:
 - Video stream: `h264`, `1920x1080`, `30 fps`, `28227` frames, `940.900s`.
 - Audio stream: `aac`, `48000 Hz`, stereo, `940.949s`.
 - Output size: about `149M`.
+
+## Post-Render Versions
+
+- `public/exports/final_report_v1.1.mp4`: adds a 1.5-second English/Taiwanese
+  course cover page before the original video body.
+- `public/exports/final_report_v1.2.mp4`: adds the same cover page and a short
+  English image-generation attribution end card. The end card credits the
+  adapted and expanded project
+  `JasonLn0711/codex-skill-ian-xiaohei-illustrations` and the MIT-licensed
+  upstream project `helloianneo/ian-xiaohei-illustrations`.
+
+The full attribution record and submission-ready description text are tracked
+in `docs/third_party_attribution.md` and `docs/submission_attribution_texts.md`.

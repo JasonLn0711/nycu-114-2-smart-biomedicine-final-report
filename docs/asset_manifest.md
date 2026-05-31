@@ -30,6 +30,14 @@ All final scene images should be generated one-by-one through `$ian-xiaohei-illu
 
 Generated originals are retained under `/home/jnln3799/.codex/generated_images/019e73de-ab8e-7361-97b7-12686ee59e9a/`; copied delivery assets live under `public/images/`.
 
+## Image-Generation Skill Attribution
+
+The report illustrations were assisted by the adapted and expanded Codex skill
+`JasonLn0711/codex-skill-ian-xiaohei-illustrations`, which builds from the
+MIT-licensed upstream project `helloianneo/ian-xiaohei-illustrations`.
+The durable attribution and license record is maintained in
+`docs/third_party_attribution.md`.
+
 ## Paper Screenshot And Figure Assets
 
 These evidence assets are copied from the report source package and displayed directly in Remotion, not regenerated as illustrations.
