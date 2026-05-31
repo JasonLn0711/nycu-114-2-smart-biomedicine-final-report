@@ -357,7 +357,8 @@ style drift only => no formal gate failure
 | BreezyVoice | Official paper and Hugging Face model card describe a Taiwanese Mandarin TTS system adapted for polyphone disambiguation and code-switching. | Primary Taiwan Mandarin / mixed Mandarin-English candidate, especially for CYBERSEC / CDE style material. |
 | F5-TTS | Official paper and GitHub describe flow-matching TTS with zero-shot and code-switching capability; current GitHub page reports official code and public checkpoints. | Cross-model pilot candidate and English/multilingual baseline; must pass the same auto-QA gate before production use. |
 | GPT-SoVITS | Official GitHub describes zero-shot TTS from short samples, few-shot fine-tuning, cross-lingual support, and WebUI tooling. | Good candidate for few-shot voice experiments and failure-taxonomy learning; not accepted for final use without full evidence package. |
-| CosyVoice / CosyVoice 2 | Papers and official GitHub position CosyVoice as scalable multilingual zero-shot TTS; CosyVoice 2 adds streaming-oriented speech synthesis. | Add to next golden-pilot test set, especially if latency, streaming, or multilingual benchmarking matters. |
+| CosyVoice 2 / CosyVoice 3 | Papers, official GitHub, and Fun-CosyVoice3 model card position CosyVoice as a multilingual zero-shot / streaming / in-the-wild speech synthesis family. CosyVoice 2 emphasizes low-latency streaming; CosyVoice 3 adds scale-up and post-training claims for content consistency, speaker similarity, prosody naturalness, broader language/dialect coverage, and 0.5B/1.5B routes. | Add CosyVoice 3 to the next golden-pilot test set, especially if latency, streaming, multilingual benchmarking, or in-the-wild robustness matters. Treat it as candidate-only until local QA evidence exists. |
+| OpenAI Audio API / `gpt-4o-mini-tts` | Official OpenAI docs list `gpt-4o-mini-tts` for text-to-speech, built-in voices, streaming audio output, and required user disclosure that the voice is AI-generated. Official speech-to-text docs list `gpt-4o-transcribe`, `gpt-4o-mini-transcribe`, and diarization routes with file-size constraints. | Optional cloud baseline when data governance permits cloud processing. Record request JSON, model snapshot, voice, instructions, response hash, disclosure text, and second-ASR audit. Do not use for sensitive reference voices or research stimuli without an explicit data boundary. |
 
 ### ASR models and metrics
 
@@ -373,7 +374,7 @@ style drift only => no formal gate failure
 | --- | --- | --- |
 | FFmpeg `loudnorm` | Official FFmpeg docs define EBU R128 loudness normalization and target IL/LRA/TP options. | Primary loudness normalization and measurement route. |
 | FFmpeg `silencedetect` / `ebur128` | Official FFmpeg filter docs provide silence and loudness scanning filters. | Long-silence detection and extra loudness audit. |
-| C2PA | Official `2.2` specification defines cryptographically verifiable content provenance architecture. | Future delivery-layer provenance for public media or research stimuli where content credentials matter. |
+| C2PA | Official specification site now exposes `2.4`; the technical spec defines Content Credentials, claims, assertions, signatures, manifests, hard/soft bindings, and includes an `c2pa.ai-disclosure` assertion for machine-readable AI transparency. | Future delivery-layer provenance for public media or research stimuli where content credentials matter. Use it as provenance, not as proof that the audio is correct, consented, or clinically safe. |
 | NIST AI RMF | Official NIST page provides a risk-management framework and GenAI profile resources. | Governance vocabulary for rights, disclosure, traceability, and risk controls. |
 
 ## Missing items to add next
@@ -509,9 +510,14 @@ source_text_hash
 synthetic_voice_disclosure
 rights_status
 editorial responsibility
+c2pa_spec_version
+c2pa.ai-disclosure.modelType
+c2pa.ai-disclosure.humanOversightLevel
 ```
 
-This does not replace consent or IRB review. It strengthens content provenance.
+This does not replace consent, IRB review, semantic QA, or platform disclosure.
+It strengthens content provenance by making the generation route and human
+oversight level machine-readable.
 
 ### 8. Energy, runtime, and cost log
 
@@ -551,6 +557,34 @@ Examples:
 - `FDA 524B` is not interchangeable with `FDA 524`.
 - `triage` may be accepted as `分流` in Chinese clinical context, but not in an English-only measurement unless specified.
 
+### 11. Cloud API governance
+
+If a future route uses a cloud TTS or ASR API, record more than the model name.
+
+Required fields:
+
+```yaml
+provider:
+endpoint:
+model:
+model_snapshot:
+voice:
+instructions:
+request_json_sha256:
+response_audio_sha256:
+data_retention_policy:
+patient_or_sensitive_data_present:
+reference_voice_present:
+synthetic_voice_disclosure:
+second_asr_audit:
+```
+
+Reason: cloud services can change aliases, voices, model snapshots, safety
+policy, request limits, and data-retention defaults. A cloud route can be a
+useful benchmark, but it is not automatically more reproducible than a local
+open-weight route unless the request, model snapshot, rights status, and output
+hash are preserved.
+
 ## Current reproducibility decision
 
 Use this decision table when starting a new TTS project.
@@ -558,7 +592,7 @@ Use this decision table when starting a new TTS project.
 | Question | Decision |
 | --- | --- |
 | Is the material Taiwan Mandarin or mixed Taiwan Mandarin-English? | Start with BreezyVoice + Breeze-ASR-25 pilot. |
-| Is the material English/multilingual and needs a comparison baseline? | Run BreezyVoice, F5-TTS, and CosyVoice on golden pilots. |
+| Is the material English/multilingual and needs a comparison baseline? | Run BreezyVoice, F5-TTS, CosyVoice 3, and optional cloud baseline on golden pilots. |
 | Does it use a real human reference voice? | Fill rights manifest before generation, not after delivery. |
 | Is the output for research participants? | Use `research_stimulus` profile and second-ASR audit. |
 | Is the output public? | Add disclosure, delivery smoke, and content provenance manifest. |
@@ -577,9 +611,14 @@ Use this decision table when starting a new TTS project.
 - GPT-SoVITS official GitHub: <https://github.com/RVC-Boss/GPT-SoVITS>
 - CosyVoice paper: <https://arxiv.org/abs/2407.05407>
 - CosyVoice 2 paper: <https://arxiv.org/abs/2412.10117>
+- CosyVoice 3 paper: <https://arxiv.org/abs/2505.17589>
 - CosyVoice official GitHub: <https://github.com/FunAudioLLM/CosyVoice>
+- Fun-CosyVoice3 model card: <https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512>
+- OpenAI Audio guide: <https://platform.openai.com/docs/guides/audio>
+- OpenAI Text to Speech guide: <https://platform.openai.com/docs/guides/text-to-speech>
+- OpenAI Speech to Text guide: <https://platform.openai.com/docs/guides/speech-to-text>
 - JiWER docs: <https://jitsi.github.io/jiwer/>
 - JiWER GitHub: <https://github.com/jitsi/jiwer>
 - FFmpeg filters: <https://ffmpeg.org/ffmpeg-filters.html>
-- C2PA technical specification 2.2: <https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html>
+- C2PA technical specification 2.4: <https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html>
 - NIST AI Risk Management Framework: <https://www.nist.gov/itl/ai-risk-management-framework>

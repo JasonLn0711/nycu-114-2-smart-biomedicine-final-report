@@ -41,6 +41,19 @@ tts:
   speed_or_tempo:
   chunk_strategy:
 
+cloud_api:
+  provider:
+  endpoint:
+  model:
+  model_snapshot:
+  voice:
+  instructions:
+  request_json_sha256:
+  response_audio_sha256:
+  data_retention_policy:
+  patient_or_sensitive_data_present: no
+  reference_voice_present: no
+
 asr:
   model_id:
   model_revision:
@@ -69,6 +82,15 @@ outputs:
   term_error_list_path:
   audio_quality_report_path:
   release_manifest_path:
+
+provenance:
+  c2pa_spec_version:
+  c2pa_manifest_path:
+  c2pa_manifest_sha256:
+  ai_disclosure_assertion: no
+  ai_model_type:
+  human_oversight_level:
+  synthetic_voice_disclosure_text_path:
 
 notes:
   known_warnings:

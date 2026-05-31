@@ -12,6 +12,9 @@ Rights manifest path:
 
 TTS model:
 Checkpoint / commit:
+Cloud/API route:
+Model snapshot:
+Request JSON SHA256:
 ASR model:
 Device:
 Python:
@@ -47,6 +50,8 @@ Term error list:
 Silence / clipping check:
 Chunk consistency check:
 Platform smoke check:
+Provenance / C2PA manifest:
+AI disclosure status:
 Accepted / rejected:
 Failure type:
 Repair action:
