@@ -34,7 +34,11 @@ Working English title:
 - Recording cue sheet:
   `data/projects/2026-06-smart-biomedicine-final-report/video-recording-cue-sheet-v1.md`
 - Tools: `data/projects/2026-06-smart-biomedicine-final-report/tools/`
+- Reusable TTS methodology: `docs/tts-methodology/`
+- TTS experiment cards: `logs/tts-experiments/`
+- Repo-safe TTS auto-QA summaries: `qa/tts-auto-checks/`
 - Local generated artifacts: `exports/`
+- Local-only TTS assets: `assets/tts-local-only/`
 
 ## Local Artifact Policy
 
@@ -56,6 +60,19 @@ python3 data/projects/2026-06-smart-biomedicine-final-report/tools/video_recordi
 python3 data/projects/2026-06-smart-biomedicine-final-report/tools/final_video_gate_status.py --export-root exports/smart-biomedicine-breezyvoice
 ```
 
+## Reusable TTS Research-Audio Workflow
+
+Future TTS research audio should use the methodology in
+`docs/tts-methodology/`. The production gate is automated or semi-automated:
+ASR back-transcription, pronunciation/critical-term checks, audio-quality
+checks, chunk consistency, and hash/provenance decide acceptance. Subjective
+listening can inform repair decisions, but it is not the acceptance gate.
+
+Each TTS run should create a card from `templates/tts-experiment-card.md` under
+`logs/tts-experiments/`. Raw reference voice, generated audio, failed samples,
+and private model artifacts stay in ignored local/private storage such as
+`assets/tts-local-only/` or `exports/`.
+
 ## Optional Remotion Render Surface
 
 The repo also contains a Remotion timeline scaffold under `src/` with scene
@@ -63,6 +80,12 @@ timings in `src/scenes.ts`. Render inputs live under ignored `public/` paths:
 local narration audio, generated scene images, transcript copies, and rendered
 MP4 outputs. Use `docs/video_plan.md` and `docs/asset_manifest.md` before
 claiming the Remotion render path is complete.
+
+## Attribution Surface
+
+Image-generation attribution for the final video is tracked in
+`docs/third_party_attribution.md`. YouTube and Google Drive sidecar text blocks
+are tracked in `docs/submission_attribution_texts.md`.
 
 ## Delivery Gates
 
