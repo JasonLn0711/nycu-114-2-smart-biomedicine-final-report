@@ -6,6 +6,13 @@ description and Google Drive sidecar note.
 ## YouTube Description Block
 
 ```text
+AI/TTS use disclosure
+
+Narration audio was generated using text-to-speech for course presentation
+purposes. The content was authored, checked, and organized by the presenter.
+AI-assisted illustrations were used as supporting visuals. Academic claims
+remain based on the cited papers and the defined course report scope.
+
 Image generation attribution
 
 Some illustrations in this video were assisted by an adapted and expanded
@@ -28,6 +35,13 @@ Jason Chia-Sheng Lin
 ```text
 NYCU 114-2 Smart Biomedicine Final Report
 Video attribution and license sidecar
+
+AI/TTS use disclosure
+
+Narration audio was generated using text-to-speech for course presentation
+purposes. The content was authored, checked, and organized by the presenter.
+AI-assisted illustrations were used as supporting visuals. Academic claims
+remain based on the cited papers and the defined course report scope.
 
 Image generation attribution
 

@@ -8,6 +8,7 @@ Purpose:
 Source text path:
 Model-facing text path:
 Pronunciation lexicon path:
+Rights manifest path:
 
 TTS model:
 Checkpoint / commit:
@@ -35,12 +36,17 @@ Sample rate:
 Channel:
 Loudness LUFS:
 
+Auto-QA profile:
+QA result path:
+QA status:
 ASR transcript path:
 CER / WER:
 Keyword accuracy:
+Critical term accuracy:
 Term error list:
 Silence / clipping check:
 Chunk consistency check:
+Platform smoke check:
 Accepted / rejected:
 Failure type:
 Repair action:

@@ -1,2 +1,2 @@
-experiment_id,chunk_id,term,expected_reading,asr_observed,critical,error_type,repair_action,status
-EXP-YYYYMMDD-001,sbm_tts_01_opening,ASR,A-S-R,A are,yes,critical_term_mismatch,replace with automatic speech recognition,rejected
+experiment_id,term,expected_reading,aliases,context,critical,source_variant,asr_observed,error_type,status
+EXP-YYYYMMDD-001,ASR,A-S-R,A S R|automatic speech recognition,technical talk,yes,automatic speech recognition,automatic speech recognition,,pass
