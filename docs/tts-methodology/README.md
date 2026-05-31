@@ -12,6 +12,11 @@ consistency, and provenance.
 
 ## Documents
 
+- `tts-reproducible-research-notes-cybersec-smart-biomedicine-v1-zh-tw.md`:
+  cross-project reproducible research note combining the CYBERSEC / CDE
+  BreezyVoice production experience with the Smart Biomedicine BreezyVoice,
+  F5-TTS, and GPT-SoVITS evidence, plus web-verified 2026-05-31 technology
+  stack updates.
 - `tts-research-audio-methodology-v1-zh-tw.md`: full production methodology.
 - `tts-text-design-guide.md`: model-facing text design rules.
 - `tts-auto-qa-rubric.md`: automated acceptance thresholds.
@@ -50,6 +55,8 @@ It emits `qa_result.json`, `qa_summary.md`, `term_error_list.csv`,
 - `../../templates/tts-experiment-card.md`: required card for each TTS run.
 - `../../templates/tts-pronunciation-lexicon.csv`: critical-term lexicon
   template with alias support.
+- `../../templates/tts-run-environment.yaml`: runtime, model snapshot,
+  command, parameter, and hash manifest for reproducible TTS generation.
 - `../../templates/tts-rights-manifest.yaml`: rights and disclosure manifest.
 - `../../templates/tts-golden-pilot-manifest.yaml`: stable pilot set for
   cross-model comparison.

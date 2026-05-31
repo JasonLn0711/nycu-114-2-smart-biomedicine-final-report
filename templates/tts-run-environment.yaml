@@ -1,0 +1,76 @@
+# TTS Run Environment Manifest
+#
+# Fill one copy per experiment. This file records the runtime and model
+# snapshot needed to reproduce a TTS generation and QA run.
+
+experiment_id:
+date:
+project:
+profile: internal_draft # internal_draft | teaching_material | research_stimulus | public_external
+
+host:
+  os:
+  hostname_or_machine_label:
+  gpu:
+  gpu_driver:
+  cuda:
+  cpu:
+  ram:
+
+runtime:
+  python:
+  pytorch:
+  transformers:
+  torchaudio:
+  jiwer:
+  ffmpeg:
+  ffprobe:
+  container_or_venv_path:
+  requirements_lock_path:
+
+tts:
+  repo_url:
+  repo_commit:
+  model_id:
+  model_revision:
+  checkpoint_path_local_only:
+  generation_command:
+  seed:
+  temperature:
+  top_p:
+  speed_or_tempo:
+  chunk_strategy:
+
+asr:
+  model_id:
+  model_revision:
+  command:
+  decoding_settings:
+  secondary_asr_model_id:
+  secondary_asr_model_revision:
+
+inputs:
+  source_text_path:
+  source_text_sha256:
+  model_facing_text_path:
+  model_facing_text_sha256:
+  lexicon_path:
+  lexicon_sha256:
+  rights_manifest_path:
+  rights_manifest_sha256:
+  reference_audio_path_local_only:
+  reference_audio_sha256:
+
+outputs:
+  audio_dir_local_or_private:
+  output_manifest_path:
+  qa_result_path:
+  qa_summary_path:
+  term_error_list_path:
+  audio_quality_report_path:
+  release_manifest_path:
+
+notes:
+  known_warnings:
+  rerender_policy:
+  deletion_or_withdrawal_mechanism:
