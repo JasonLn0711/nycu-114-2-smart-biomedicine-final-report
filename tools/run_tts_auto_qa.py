@@ -642,7 +642,7 @@ def write_term_errors(path: Path, rows: list[dict[str, str]], experiment_id: str
         "status",
     ]
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             if row["status"] == "pass":
