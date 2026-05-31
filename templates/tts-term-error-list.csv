@@ -1,0 +1,2 @@
+experiment_id,chunk_id,term,expected_reading,asr_observed,critical,error_type,repair_action,status
+EXP-YYYYMMDD-001,sbm_tts_01_opening,ASR,A-S-R,A are,yes,critical_term_mismatch,replace with automatic speech recognition,rejected

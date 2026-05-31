@@ -25,6 +25,19 @@ The correct route is now:
 7. accept a chunk only after semantic sweep preserves the clinical-boundary meaning,
 8. stitch only BreezyVoice accepted chunks.
 
+## Post-Run Methodology Update - 2026-05-31
+
+This execution plan records the historical course-report route. For future TTS
+research audio, the reusable workflow is now documented under
+`docs/tts-methodology/`.
+
+The future acceptance rule is automated or semi-automated QA, not subjective
+listening approval. A generated chunk should be accepted only when ASR
+back-transcription, pronunciation/critical-term checks, audio-quality checks,
+chunk consistency, and hash/provenance are sufficient. Historical semantic
+sweep lessons should be converted into machine-readable critical-term and
+meaning-boundary checks.
+
 ## Current State
 
 - BreezyVoice checkout: `/home/jnln3799/every_on_git_ubuntu/cybersec-2026-ai-samd-talk/.local/BreezyVoice`.
